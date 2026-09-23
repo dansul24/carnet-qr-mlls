@@ -1,0 +1,679 @@
+/* ==================================================
+   CONFIGURACIÓN GENERAL
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #0b3d2e 0%,
+            #031712 45%,
+            #010807 100%
+        );
+
+    color: white;
+
+    min-height: 100vh;
+
+}
+
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.header {
+
+    width: 100%;
+
+    padding: 20px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            #021510,
+            #063d2b,
+            #021510
+        );
+
+    border-bottom: 1px solid #39ff88;
+
+    box-shadow:
+        0 0 15px #00ff88,
+        0 0 35px rgba(0, 255, 136, 0.3);
+
+}
+
+
+.logo-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.logo-area img {
+
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 0 8px #39ff88);
+
+}
+
+
+.logo-area h1 {
+
+    font-size: 20px;
+
+    letter-spacing: 2px;
+
+    color: #ffffff;
+
+}
+
+
+.logo-area p {
+
+    margin-top: 5px;
+
+    color: #39ff88;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* ==================================================
+   QR DECORATIVO
+================================================== */
+
+.qr-decoration {
+
+    width: 70px;
+
+    height: 70px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 5px;
+
+    padding: 5px;
+
+}
+
+
+.qr-decoration span {
+
+    background: #39ff88;
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 0 6px #39ff88;
+
+}
+
+
+.qr-decoration span:nth-child(2),
+.qr-decoration span:nth-child(4),
+.qr-decoration span:nth-child(6),
+.qr-decoration span:nth-child(8) {
+
+    background: transparent;
+
+    border: 2px solid #39ff88;
+
+}
+
+
+
+/* ==================================================
+   LÍNEA NEÓN
+================================================== */
+
+.linea-neon {
+
+    width: 100%;
+
+    height: 3px;
+
+    background: #39ff88;
+
+    box-shadow:
+        0 0 8px #39ff88,
+        0 0 20px #00ff88,
+        0 0 40px #00ff88;
+
+}
+
+
+
+/* ==================================================
+   CONTENIDO
+================================================== */
+
+main {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 50px 20px;
+
+}
+
+
+
+/* ==================================================
+   TÍTULO
+================================================== */
+
+.titulo {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.titulo span {
+
+    display: inline-block;
+
+    padding: 7px 15px;
+
+    border: 1px solid #39ff88;
+
+    border-radius: 30px;
+
+    color: #39ff88;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    box-shadow:
+        0 0 10px rgba(57, 255, 136, 0.5);
+
+}
+
+
+.titulo h2 {
+
+    margin-top: 15px;
+
+    color: white;
+
+    font-size: 30px;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 8px #39ff88;
+
+}
+
+
+.titulo p {
+
+    margin-top: 8px;
+
+    color: #a7c7b8;
+
+}
+
+
+
+/* ==================================================
+   CARNET
+================================================== */
+
+.carnet {
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(8, 48, 35, 0.95),
+            rgba(2, 17, 12, 0.98)
+        );
+
+    border: 1px solid #39ff88;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-shadow:
+
+        0 0 15px rgba(57, 255, 136, 0.4),
+
+        inset 0 0 25px rgba(57, 255, 136, 0.08);
+
+}
+
+
+
+/* ==================================================
+   FOTO
+================================================== */
+
+.foto {
+
+    width: 155px;
+
+    height: 155px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    padding: 5px;
+
+    background: #39ff88;
+
+    box-shadow:
+
+        0 0 10px #39ff88,
+
+        0 0 30px rgba(57, 255, 136, 0.6);
+
+}
+
+
+.foto img {
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: block;
+
+    background: #10251d;
+
+}
+
+
+
+/* ==================================================
+   NOMBRE
+================================================== */
+
+.carnet h3 {
+
+    margin-top: 25px;
+
+    font-size: 25px;
+
+    letter-spacing: 1px;
+
+    color: white;
+
+    text-shadow:
+        0 0 8px rgba(57, 255, 136, 0.7);
+
+}
+
+
+.registrado {
+
+    margin-top: 8px;
+
+    color: #39ff88;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* ==================================================
+   DATOS
+================================================== */
+
+.datos {
+
+    margin-top: 30px;
+
+    text-align: left;
+
+}
+
+
+.dato {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 16px;
+
+    margin-bottom: 12px;
+
+    background: rgba(57, 255, 136, 0.04);
+
+    border: 1px solid rgba(57, 255, 136, 0.25);
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+
+}
+
+
+.dato:hover {
+
+    border-color: #39ff88;
+
+    box-shadow:
+        0 0 12px rgba(57, 255, 136, 0.3);
+
+    transform: translateX(3px);
+
+}
+
+
+.icono {
+
+    width: 42px;
+
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    color: #39ff88;
+
+    border: 1px solid #39ff88;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    box-shadow:
+        0 0 8px rgba(57, 255, 136, 0.3);
+
+}
+
+
+.informacion {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.informacion span {
+
+    font-size: 10px;
+
+    color: #8db7a2;
+
+    letter-spacing: 1px;
+
+}
+
+
+.informacion strong {
+
+    color: white;
+
+    font-size: 15px;
+
+}
+
+
+
+/* ==================================================
+   ESTADO
+================================================== */
+
+.estado {
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #39ff88;
+
+    color: #02150d;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+
+        0 0 10px #39ff88,
+
+        0 0 25px rgba(57, 255, 136, 0.5);
+
+}
+
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+
+    margin-top: 20px;
+
+    padding: 25px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    background: #020b07;
+
+    border-top: 1px solid #39ff88;
+
+    box-shadow:
+        0 -5px 20px rgba(57, 255, 136, 0.15);
+
+    text-align: center;
+
+}
+
+
+.footer-logo img {
+
+    width: 50px;
+
+    height: 50px;
+
+    object-fit: contain;
+
+}
+
+
+footer strong {
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+}
+
+
+footer p {
+
+    margin-top: 5px;
+
+    color: #39ff88;
+
+    font-size: 12px;
+
+}
+
+
+
+/* ==================================================
+   CELULARES
+================================================== */
+
+@media (max-width: 600px) {
+
+
+    .header {
+
+        padding: 15px;
+
+    }
+
+
+    .logo-area img {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+
+    .logo-area h1 {
+
+        font-size: 14px;
+
+    }
+
+
+    .logo-area p {
+
+        font-size: 10px;
+
+    }
+
+
+    .qr-decoration {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+
+    main {
+
+        padding: 35px 12px;
+
+    }
+
+
+    .titulo h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .carnet {
+
+        padding: 25px 15px;
+
+    }
+
+
+    .foto {
+
+        width: 130px;
+
+        height: 130px;
+
+    }
+
+
+    .carnet h3 {
+
+        font-size: 20px;
+
+    }
+
+
+    .dato {
+
+        padding: 12px;
+
+    }
+
+
+    .informacion strong {
+
+        font-size: 13px;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+    }
+
+}
